@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            background-color: #B3E5BE;
+        }
+       div{
+        display: block;
+       }
+    </style>
+  </head>
+  <body>
+   <div class="header">
+     <a class="link" href="file:///E:/Udemy%20course%20for%20WEB/index.html">Home Page</a>
+      <div class="navigation">
+        <select name="" id=""> Contact Me
+            <option value="">
+                <a href="tel:8296947583">Call Me</a>
+            </option>
+        </select>
+      </div>
+    </div>  
+    <caption>FeedBack</caption>
+    <form action="Index.php" method="post" enctype="application/x-www-form-urlencoded">
+        <!--Action means what is the form must do after complete details-->
+        <!--method is How to send data to the server and has two types :
+            1)get-> When you Send Details it show on link up next of window name 
+            NEVER use GET to send sensitive data!
+            The length of a URL is limited (2048 characters)
+
+            2)post->When you Send Details it not show on link up next of window name
+            POST has no size limitations, and can be used to send large amounts of data.
+             --> 
+        <!-- enctype is encryption type نوع التشفير-->     
+        <span style="color: red;">*</span><label for="fname">Your Name :</label>
+        <input id="fname" type="text" required placeholder="Mohammed" min="5" max="45"><br>
+        <span style="color: red;">*</span><label for="email">Your Email :</label>
+        <input id="email" type="email" placeholder="sdr@gmil.com" required><br>
+        <label for="number">Your Number :</label>
+        <input type="tel" name="number" id="number" placeholder="+91 82969.."><br>
+        <span style="color: red;">*</span><label for="message">Your Message :</label><br>
+        <textarea name="" id="message" placeholder="Hi,.." cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+  </body>
+</html>
